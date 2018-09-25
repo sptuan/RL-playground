@@ -1,7 +1,10 @@
 """
-This part of code is the Q learning brain, which is a brain of the agent.
-All decisions are made in here.
-View more on my tutorial page: https://morvanzhou.github.io/tutorials/
+Reinforcement learning maze example.
+
+This script is our Q-Learning brain.
+
+This script is modified from https://morvanzhou.github.io/tutorials/
+
 """
 
 import numpy as np
