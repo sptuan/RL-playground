@@ -8,14 +8,14 @@ Github README.md可能排版不佳！请移步↑博客链接查看
 
 嗨多磨！今天我们要切入一个相当有趣的主题:Reinforcement Learning。最后，大家可以亲眼看到，一个人工智障使用Q-Learning，最终成为人工智能的过程。
 
-<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片1.jpg" alt="" width="1280" height="720" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片1.jpg"  />
 
 <!--more-->
 
 [toc depth="2]
 <h2>1 强化学习初见</h2>
 <h3>1.1 引入</h3>
-<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片2.jpg" alt="" width="1280" height="720" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片2.jpg"  />
 
 嗨多磨！今天我们要切入一个相当有趣的主题，强化学习。经过今天最后的例程，大家可以亲眼看到，一个<strong>人工智障</strong>使用Q-Learning方法，吃了不少苦头最终成为<strong>人工智能</strong>的过程。
 
@@ -29,7 +29,7 @@ Github README.md可能排版不佳！请移步↑博客链接查看
 
 &nbsp;
 <h3>1.2 俄罗斯方块与玩家</h3>
-<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片3.jpg" alt="" width="1280" height="720" />
+<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片3.jpg" />
 
 其实强化学习就在我们的身边，试想以下的问题：为什么我们经过任何人的教学，就学会了玩儿“俄罗斯方块”？是什么驱使我们尽最大努力消除方块继续游戏？
 
@@ -49,15 +49,15 @@ Github README.md可能排版不佳！请移步↑博客链接查看
  	<li>方块状态：<strong>Observation，观察值</strong>，反馈给Agent。</li>
  	<li>特效(爆炸消除/游戏结束)：<strong>Reward</strong>，<strong>反馈。</strong></li>
 </ul>
-<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片4.jpg" alt="" width="1280" height="720" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片4.jpg"  />
 
 在这个过程中。<strong>玩家Agent</strong>根据<strong>方块状态Observation</strong>不断地在<strong>游戏机Envrionment</strong>上操作，一下消除4行让你很爽，给予你好的<strong>快感Reward</strong>，堆满方块导致游戏失败让你不甘心、不爽，因此给你<strong>消极Reward</strong>。
 
 这就形成了经典的强化学习模式。学习的目标是：最大化获得的汇报。
 
-<img src="https://steinslab.io/wp-content/uploads/2018/09/TIM截图20180926013423.png" alt="" width="454" height="203" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/TIM截图20180926013423.png"  />
 <h3>1.3 强化学习的特点和评价</h3>
-<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片5.jpg" alt="" width="1280" height="720" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片5.jpg"  />
 
 <strong>不断试错</strong>
 
@@ -89,7 +89,7 @@ Agent在不断试错之中，更加看中长时间尺度内能获得的回报，
  	<li>$latex a_2$ 一下消除1行，感觉还行。</li>
  	<li>$latex a_3$ 一行都没消除！你在逗我？距离Gameover又近了一步！</li>
 </ul>
-<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片8.jpg" alt="" width="1280" height="720" />
+<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片8.jpg"  />
 
 我是如何做出这些判断的呢？我的依据其实就是脑子中的一个叫做“Q-table”Q表的矩阵！
 
@@ -97,7 +97,7 @@ Q表：描述我在所有状态中所有行动的数值矩阵，我不管，我�
 
 &nbsp;
 <h3>2.2 Q-Learning 更新</h3>
-<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片9.jpg" alt="" width="1280" height="720" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片9.jpg" />
 
 之前我们说了，我们是在不断地试错中学习，实际上就是在不断地以某种策略更新这个Q表。这个更新策略也是Q-Learning的特色。
 
@@ -142,7 +142,7 @@ Q-Learning算法流程如上图。在一定的episode里，我不断地重复、
 
 当然，做完上述迷宫实验后，我提出自己的问题，尝试用RL解决。
 
-<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片11.jpg" alt="" width="1280" height="720" />
+<img  src="https://steinslab.io/wp-content/uploads/2018/09/幻灯片11.jpg"  />
 
 我的代码详见：
 
@@ -152,7 +152,7 @@ Q-Learning算法流程如上图。在一定的episode里，我不断地重复、
 
 一个摩托车骑手，准备从A点出发，前往H点。各点之间的距离如下图所示。但他根本不知道道路，只能闷头尝试。能不能自己探索出一条相对短的路，从A点到H点？
 
-<img src="https://steinslab.io/wp-content/uploads/2018/09/TIM截图20180926032845.png" alt="" width="406" height="176" />
+<img src="https://steinslab.io/wp-content/uploads/2018/09/TIM截图20180926032845.png" />
 <h3></h3>
 <h3>3.2 问题抽象</h3>
 <strong class="final-path">env_tk.py</strong>
