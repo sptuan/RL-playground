@@ -2,7 +2,7 @@
 SPtuan's RL Playground.
 
 ## Status
-2018-09-26 Q-Learning 101. Blog post: [QL](https://steinslab.io/archives/1562 "强化学习: Q-Learning 101 - 从人工智障到人工智能")
+2018-09-26 Q-Learning 101. Blog post: [强化学习: Q-Learning 101 - 从人工智障到人工智能](https://steinslab.io/archives/1562 "强化学习: Q-Learning 101 - 从人工智障到人工智能")
 
 ## Code
 ### ./00_example
