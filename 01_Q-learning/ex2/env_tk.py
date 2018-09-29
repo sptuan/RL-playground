@@ -296,7 +296,7 @@ class Maze(tk.Tk, object):
             if action == 'RIGHT':
                 self.canvas.move(self.rect, UNIT*2, 0)  # move agent
                 s_ = 'H1'  # next state
-                reward = 1000
+                reward = 100000
                 done = True
                 action_space = []
             else:
